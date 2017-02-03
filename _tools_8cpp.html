@@ -89,7 +89,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_tools_8hpp_source.html">Tools.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for Tools.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_tools_8cpp__incl.png" border="0" usemap="#_tools_8cpp" alt=""/></div>
+<map name="_tools_8cpp" id="_tools_8cpp">
+</map>
+</div>
+</div>
+<p><a href="_tools_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aee49da40d0229f3d6d5f8607b92d64c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tools_8cpp.html#aee49da40d0229f3d6d5f8607b92d64c8">swap_bytes</a> (char const *src, char *dest)</td></tr>
@@ -137,10 +146,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:a440cec0606d237d1e48deca91b5a4580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the analytical volume.  <a href="#a440cec0606d237d1e48deca91b5a4580">More...</a><br /></td></tr>
 <tr class="separator:a440cec0606d237d1e48deca91b5a4580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bf803de912a0963a01bb59fd17548bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tools_8cpp.html#a3bf803de912a0963a01bb59fd17548bd">delta</a> (double gamma, double t, double t0, double sigma)</td></tr>
+<tr class="memdesc:a3bf803de912a0963a01bb59fd17548bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gaussian function.  <a href="#a3bf803de912a0963a01bb59fd17548bd">More...</a><br /></td></tr>
 <tr class="separator:a3bf803de912a0963a01bb59fd17548bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9455e265cb8bf4b1186fc6b1b492ab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tools_8cpp.html#a6e9455e265cb8bf4b1186fc6b1b492ab">ddeltadt0</a> (double gamma, double t, double t0, double sigma)</td></tr>
+<tr class="memdesc:a6e9455e265cb8bf4b1186fc6b1b492ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative of Gaussian function according to t0.  <a href="#a6e9455e265cb8bf4b1186fc6b1b492ab">More...</a><br /></td></tr>
 <tr class="separator:a6e9455e265cb8bf4b1186fc6b1b492ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab684ad8347207cafa92dc58cf1ebc2da"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tools_8cpp.html#ab684ad8347207cafa92dc58cf1ebc2da">ddeltadsigma</a> (double gamma, double t, double t0, double sigma)</td></tr>
+<tr class="memdesc:ab684ad8347207cafa92dc58cf1ebc2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative of Gaussian function according to sigma.  <a href="#ab684ad8347207cafa92dc58cf1ebc2da">More...</a><br /></td></tr>
 <tr class="separator:ab684ad8347207cafa92dc58cf1ebc2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -192,6 +204,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00437">437</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a440cec0606d237d1e48deca91b5a4580"></a>
@@ -226,6 +240,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00463">463</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
 
 </div>
 </div>
@@ -283,6 +299,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00316">316</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab684ad8347207cafa92dc58cf1ebc2da"></a>
@@ -320,6 +338,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Derivative of Gaussian function according to sigma. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>double time </td></tr>
+    <tr><td class="paramname">t0</td><td>double center of the Gaussian </td></tr>
+    <tr><td class="paramname">sigma</td><td>double standard deviation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00498">498</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
 
 </div>
 </div>
@@ -359,6 +389,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Derivative of Gaussian function according to t0. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>double time </td></tr>
+    <tr><td class="paramname">t0</td><td>double center of the Gaussian </td></tr>
+    <tr><td class="paramname">sigma</td><td>double standard deviation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00486">486</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3bf803de912a0963a01bb59fd17548bd"></a>
@@ -397,6 +439,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gaussian function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>double time </td></tr>
+    <tr><td class="paramname">t0</td><td>double center of the Gaussian </td></tr>
+    <tr><td class="paramname">sigma</td><td>double standard deviation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00474">474</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a660dac94d1f4a2a80337bd59e95c5b19"></a>
@@ -432,6 +486,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>V1.V2 </dd></dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00345">345</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
 
 </div>
 </div>
@@ -489,6 +545,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00303">303</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ada451e17b5eb11105c938bcdd740f648"></a>
@@ -513,6 +571,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>sqrt(V.V) </dd></dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00360">360</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,6 +634,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00290">290</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aec2ae071830463c66fbe5d107086b3ab"></a>
@@ -634,6 +696,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00261">261</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afc1dd393f61e0f052c9370bfd9c70f80"></a>
@@ -657,6 +721,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00369">369</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
 
 </div>
 </div>
@@ -778,6 +844,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00164">164</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9f29698bce67d856008e85a5c6b45b57"></a>
@@ -800,6 +868,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00335">335</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
 
 </div>
 </div>
@@ -870,6 +940,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00406">406</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aee49da40d0229f3d6d5f8607b92d64c8"></a>
@@ -904,6 +976,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00030">30</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
 
 </div>
 </div>
@@ -973,6 +1047,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00103">103</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6070be542d4f42a5c6eca6a4caa6b990"></a>
@@ -1040,6 +1116,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_tools_8cpp_source.html#l00052">52</a> of file <a class="el" href="_tools_8cpp_source.html">Tools.cpp</a>.</p>
 
 </div>
 </div>

@@ -121,20 +121,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acaa2d7308ad184b2eb51eb753ebb90fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update distance.  <a href="#acaa2d7308ad184b2eb51eb753ebb90fe">More...</a><br /></td></tr>
 <tr class="separator:acaa2d7308ad184b2eb51eb753ebb90fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad58c3f16554b2250f345dbf3bafbdb7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_advection.html#ad58c3f16554b2250f345dbf3bafbdb7e">updateDt</a> (const <a class="el" href="class_velocity.html">Velocity</a> &amp;v)</td></tr>
-<tr class="memdesc:ad58c3f16554b2250f345dbf3bafbdb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute timestep accordiang to stability condition.  <a href="#ad58c3f16554b2250f345dbf3bafbdb7e">More...</a><br /></td></tr>
+<tr class="memdesc:ad58c3f16554b2250f345dbf3bafbdb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute timestep according to stability condition.  <a href="#ad58c3f16554b2250f345dbf3bafbdb7e">More...</a><br /></td></tr>
 <tr class="separator:ad58c3f16554b2250f345dbf3bafbdb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88e2bea12ea95222552d52d366fa0b9e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_advection.html#a88e2bea12ea95222552d52d366fa0b9e">getDt</a> () const </td></tr>
 <tr class="separator:a88e2bea12ea95222552d52d366fa0b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a096d006b5fcdf0c7c8ac0eca00b34bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_advection.html#a096d006b5fcdf0c7c8ac0eca00b34bff">updateP</a> (VectorXd &amp;P) const </td></tr>
 <tr class="separator:a096d006b5fcdf0c7c8ac0eca00b34bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ac1c7afd8a36bb4b274a25e8ffb03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_advection.html#ac5ac1c7afd8a36bb4b274a25e8ffb03d">transportRK3</a> (<a class="el" href="class_velocity.html">Velocity</a> &amp;v, double dt)</td></tr>
-<tr class="separator:ac5ac1c7afd8a36bb4b274a25e8ffb03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c652bfc8a13226b2301b53c47c9b449"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_advection.html#a9c652bfc8a13226b2301b53c47c9b449">updateDt</a> (const <a class="el" href="class_velocity.html">Velocity</a> &amp;v, double dt)</td></tr>
-<tr class="separator:a9c652bfc8a13226b2301b53c47c9b449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0fb2bf4f5b8c0b24702f3fad7e8702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_advection.html#a0c0fb2bf4f5b8c0b24702f3fad7e8702">transportInverseRK3</a> (<a class="el" href="class_velocity.html">Velocity</a> &amp;v, <a class="el" href="class_velocity.html">Velocity</a> &amp;vp, VectorXd &amp;U, VectorXd &amp;M_delta)</td></tr>
-<tr class="separator:a0c0fb2bf4f5b8c0b24702f3fad7e8702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d312ab84c87748bf9eebb3ddc8d267"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_advection.html#a88d312ab84c87748bf9eebb3ddc8d267">transportInverseRK3</a> (<a class="el" href="class_velocity.html">Velocity</a> &amp;v, <a class="el" href="class_velocity.html">Velocity</a> &amp;vp, VectorXd &amp;U)</td></tr>
+<tr class="memdesc:a88d312ab84c87748bf9eebb3ddc8d267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute derivative of P according to chosen parameter from sensitivity equations.  <a href="#a88d312ab84c87748bf9eebb3ddc8d267">More...</a><br /></td></tr>
+<tr class="separator:a88d312ab84c87748bf9eebb3ddc8d267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="_advection_8hpp_source.html#l00019">19</a> of file <a class="el" href="_advection_8hpp_source.html">Advection.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2987bec86679b1605fe6538f370cab0d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -188,6 +188,8 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00012">12</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
 
 </div>
 </div>
@@ -252,6 +254,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00027">27</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -269,6 +273,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>time step </dd></dl>
 
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00104">104</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa7cfd91ea56e43f01ec132dfcd9b449e"></a>
@@ -284,6 +290,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Return values of phi </dd></dl>
+
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00088">88</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,6 +325,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Return value of phi at index (i,j,k) </dd></dl>
+
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00096">96</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
 
 </div>
 </div>
@@ -374,6 +384,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00042">42</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a75f95730f6f7502587634026cac90166"></a>
@@ -398,6 +410,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00072">72</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a08e3e95df2ffc417afd62866da42fe7e"></a>
@@ -415,9 +429,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Force values of phi to zero. </p>
 
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00080">80</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a0c0fb2bf4f5b8c0b24702f3fad7e8702"></a>
+<a class="anchor" id="a88d312ab84c87748bf9eebb3ddc8d267"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -437,13 +453,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">VectorXd &amp;&#160;</td>
-          <td class="paramname"><em>U</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VectorXd &amp;&#160;</td>
-          <td class="paramname"><em>M_delta</em>&#160;</td>
+          <td class="paramname"><em>U</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -452,6 +462,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Compute derivative of P according to chosen parameter from sensitivity equations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td><a class="el" href="class_velocity.html" title="class to caracterize a 3D velocity field ">Velocity</a> velocity at time n </td></tr>
+    <tr><td class="paramname">vp</td><td><a class="el" href="class_velocity.html" title="class to caracterize a 3D velocity field ">Velocity</a> derivative ofvelocity according to chosen parameter at time n </td></tr>
+    <tr><td class="paramname">U</td><td>VectorXd of size nx*ny*_nzLocal : function P </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00654">654</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
 
 </div>
 </div>
@@ -477,31 +499,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-</div>
-</div>
-<a class="anchor" id="ac5ac1c7afd8a36bb4b274a25e8ffb03d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Advection::transportRK3 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_velocity.html">Velocity</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>dt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00677">677</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
 
 </div>
 </div>
@@ -520,6 +518,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Update distance. </p>
 
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00695">695</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad58c3f16554b2250f345dbf3bafbdb7e"></a>
@@ -536,7 +536,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compute timestep accordiang to stability condition. </p>
+<p>Compute timestep according to stability condition. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td><a class="el" href="class_velocity.html" title="class to caracterize a 3D velocity field ">Velocity</a> velocity at time n </td></tr>
@@ -544,31 +544,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-</div>
-</div>
-<a class="anchor" id="a9c652bfc8a13226b2301b53c47c9b449"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Advection::updateDt </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_velocity.html">Velocity</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>dt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00523">523</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
 
 </div>
 </div>
@@ -587,11 +563,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Update P : 0 if phi &gt;0 0, 0 otherwise </dd></dl>
 
+<p>Definition at line <a class="el" href="_advection_8cpp_source.html#l00630">630</a> of file <a class="el" href="_advection_8cpp_source.html">Advection.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_advection_8hpp_source.html">Advection.hpp</a></li>
-<li><a class="el" href="_advection_8cpp.html">Advection.cpp</a></li>
+<li><a class="el" href="_advection_8cpp_source.html">Advection.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

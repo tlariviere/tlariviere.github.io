@@ -88,18 +88,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">mainInverse.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_tumor.html" title="class that describe the tumor behaviour ">Tumor</a> optimisation over 21 days.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;Eigen&gt;</code><br />
 <code>#include &quot;<a class="el" href="_parameters_8hpp_source.html">Parameters.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_advection_8hpp_source.html">Advection.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_tumor_8hpp_source.html">Tumor.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_simulation_8hpp_source.html">Simulation.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for mainInverse.cc:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_inverse_8cc__incl.png" border="0" usemap="#main_inverse_8cc" alt=""/></div>
+<map name="main_inverse_8cc" id="main_inverse_8cc">
+</map>
+</div>
+</div>
+<p><a href="main_inverse_8cc_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_inverse_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_tumor.html" title="class that describe the tumor behaviour ">Tumor</a> optimisation over 21 days. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params.dat</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition in file <a class="el" href="main_inverse_8cc_source.html">mainInverse.cc</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <div class="memitem">
 <div class="memproto">
@@ -123,6 +145,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<hr/>
+<p> params.dat structure : line 1 : vtk input file line 2 : output folder line 3 : 1 if PVE file, 0 otherwise line 4 : M0 line 5 : eta line 6 : tmax : number of days of simulation line 7 : dt : timestep line 8 : print frequency (in number of time step) line 9 : level-set distance update frequency (in number of time step) line 10 : precision of the conjuguate gradient line 11 : number of thread for the simulation (used only on GUI) </p>
+
+<p>Definition at line <a class="el" href="main_inverse_8cc_source.html#l00030">30</a> of file <a class="el" href="main_inverse_8cc_source.html">mainInverse.cc</a>.</p>
 
 </div>
 </div>

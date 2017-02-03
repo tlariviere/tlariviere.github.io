@@ -89,33 +89,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_simulation_8hpp_source.html">Simulation.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for Simulation.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_simulation_8cpp__incl.png" border="0" usemap="#_simulation_8cpp" alt=""/></div>
+<map name="_simulation_8cpp" id="_simulation_8cpp">
+</map>
+</div>
+</div>
+<p><a href="_simulation_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aebc7d284160ee4d5576d279164b6aa27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#aebc7d284160ee4d5576d279164b6aa27">initMpi</a> (int argc, char **argv, int &amp;me, int &amp;np, double &amp;tp)</td></tr>
-<tr class="memdesc:aebc7d284160ee4d5576d279164b6aa27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize MPI library.  <a href="#aebc7d284160ee4d5576d279164b6aa27">More...</a><br /></td></tr>
-<tr class="separator:aebc7d284160ee4d5576d279164b6aa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa4e4e6a9427a945ff4616076bf33f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#affa4e4e6a9427a945ff4616076bf33f4">initSimulation</a> (int me, int np, int &amp;i1, int &amp;im, int &amp;nzLocal, int &amp;sizeLocal, <a class="el" href="class_advection.html">Advection</a> *&amp;advectionStep, VectorXd &amp;P0, double &amp;radius, double &amp;iniVolume, double &amp;volume, <a class="el" href="class_tumor.html">Tumor</a> *&amp;tumor, double &amp;tini)</td></tr>
-<tr class="memdesc:affa4e4e6a9427a945ff4616076bf33f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare all variable used in the simulation, read params and vtk input file, apply first level-set update.  <a href="#affa4e4e6a9427a945ff4616076bf33f4">More...</a><br /></td></tr>
-<tr class="separator:affa4e4e6a9427a945ff4616076bf33f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8fb1b5edf84b74ed78817e34e68dc3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#ae8fb1b5edf84b74ed78817e34e68dc3b">directSimulation</a> (double &amp;t, int me, int i1, int im, double <a class="el" href="_parameters_8hpp.html#abb35e1061ebe407930e0f8325712d6fc">tmax</a>, <a class="el" href="class_tumor.html">Tumor</a> *tumor, <a class="el" href="class_advection.html">Advection</a> *advectionStep, double &amp;radius, double &amp;volume, double &amp;volume_prev, double iniVolume, double &amp;tgc, double &amp;tsolveV, double &amp;ttransp, double &amp;tupdateP, double &amp;tupdateM, double &amp;tupdateD, double &amp;twrite)</td></tr>
-<tr class="memdesc:ae8fb1b5edf84b74ed78817e34e68dc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the direct simulation of the tumor's growth during tmax days.  <a href="#ae8fb1b5edf84b74ed78817e34e68dc3b">More...</a><br /></td></tr>
-<tr class="separator:ae8fb1b5edf84b74ed78817e34e68dc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bb6217b77520374716a84e34372f906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#a9bb6217b77520374716a84e34372f906">inverseSimulation</a> (double sigma, double &amp;t, int me, int i1, int im, double <a class="el" href="_parameters_8hpp.html#abb35e1061ebe407930e0f8325712d6fc">tmax</a>, <a class="el" href="class_tumor.html">Tumor</a> *tumor, <a class="el" href="class_advection.html">Advection</a> *advectionStep, double &amp;radius, double &amp;volume, double &amp;volume_prev, double iniVolume, double &amp;tgc, double &amp;tsolveV, double &amp;ttransp, double &amp;tupdateP, double &amp;tupdateM, double &amp;tupdateD, double &amp;twrite)</td></tr>
-<tr class="memdesc:a9bb6217b77520374716a84e34372f906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the direct simulation with Gaussian treatment function delta during tmax days.  <a href="#a9bb6217b77520374716a84e34372f906">More...</a><br /></td></tr>
-<tr class="separator:a9bb6217b77520374716a84e34372f906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a471e1bc258984c2ed7b787319c8f63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#a9a471e1bc258984c2ed7b787319c8f63">inverseProblem</a> (double &amp;t, int me, int i1, int im, int np, double <a class="el" href="_parameters_8hpp.html#abb35e1061ebe407930e0f8325712d6fc">tmax</a>, <a class="el" href="class_tumor.html">Tumor</a> *tumor, <a class="el" href="class_advection.html">Advection</a> *advectionStep, double &amp;radius, double &amp;volume, double &amp;volume_prev, double iniVolume, double &amp;tgc, double &amp;tsolveV, double &amp;ttransp, double &amp;tupdateP, double &amp;tupdateM, double &amp;tupdateD, double &amp;twrite)</td></tr>
-<tr class="memdesc:a9a471e1bc258984c2ed7b787319c8f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the inverse problem during tmax days To find the two optimal parameters of Gaussian treatment function delta.  <a href="#a9a471e1bc258984c2ed7b787319c8f63">More...</a><br /></td></tr>
-<tr class="separator:a9a471e1bc258984c2ed7b787319c8f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc9601ede66acd019a84dccff882e85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#a4cc9601ede66acd019a84dccff882e85">displayTimings</a> (int me, double tp, double tgc, double tini, double tsolveV, double ttransp, double tupdateP, double tupdateM, double tupdateD, double twrite, const <a class="el" href="class_tumor.html">Tumor</a> *tumor)</td></tr>
-<tr class="memdesc:a4cc9601ede66acd019a84dccff882e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display computational time spent on each routine, for profiling purpose.  <a href="#a4cc9601ede66acd019a84dccff882e85">More...</a><br /></td></tr>
-<tr class="separator:a4cc9601ede66acd019a84dccff882e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3478054fcbc84f2623ccb0b8de8074f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#ac3478054fcbc84f2623ccb0b8de8074f">initMpi</a> (int argc, char **argv, int &amp;me, int &amp;np)</td></tr>
+<tr class="memdesc:ac3478054fcbc84f2623ccb0b8de8074f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize MPI library.  <a href="#ac3478054fcbc84f2623ccb0b8de8074f">More...</a><br /></td></tr>
+<tr class="separator:ac3478054fcbc84f2623ccb0b8de8074f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d19b10f2500c5ae6a58d0f12c24f635"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#a4d19b10f2500c5ae6a58d0f12c24f635">initSimulation</a> (int me, int np, int &amp;i1, int &amp;im, <a class="el" href="class_advection.html">Advection</a> *&amp;advectionStep, double &amp;iniVolume, <a class="el" href="class_tumor.html">Tumor</a> *&amp;tumor)</td></tr>
+<tr class="memdesc:a4d19b10f2500c5ae6a58d0f12c24f635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare all variable used in the simulation, read params and vtk input file, apply first level-set update.  <a href="#a4d19b10f2500c5ae6a58d0f12c24f635">More...</a><br /></td></tr>
+<tr class="separator:a4d19b10f2500c5ae6a58d0f12c24f635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6eda2513408d0e5a2948fbabc7b571"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#acd6eda2513408d0e5a2948fbabc7b571">directSimulation</a> (double &amp;t, int &amp;i, int me, int i1, int im, double <a class="el" href="_parameters_8hpp.html#abb35e1061ebe407930e0f8325712d6fc">tmax</a>, <a class="el" href="class_tumor.html">Tumor</a> *tumor, <a class="el" href="class_advection.html">Advection</a> *advectionStep, double iniVolume)</td></tr>
+<tr class="memdesc:acd6eda2513408d0e5a2948fbabc7b571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the direct simulation of the tumor's growth during tmax days.  <a href="#acd6eda2513408d0e5a2948fbabc7b571">More...</a><br /></td></tr>
+<tr class="separator:acd6eda2513408d0e5a2948fbabc7b571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ea46e5730fd12ec38e71755b4cb142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#ae0ea46e5730fd12ec38e71755b4cb142">treatmentGaussian</a> (double gamma, double sigma, double &amp;t, int &amp;i, int me, int i1, int im, double <a class="el" href="_parameters_8hpp.html#abb35e1061ebe407930e0f8325712d6fc">tmax</a>, <a class="el" href="class_tumor.html">Tumor</a> *tumor, <a class="el" href="class_advection.html">Advection</a> *advectionStep)</td></tr>
+<tr class="memdesc:ae0ea46e5730fd12ec38e71755b4cb142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the direct simulation with Gaussian treatment function delta during tmax days.  <a href="#ae0ea46e5730fd12ec38e71755b4cb142">More...</a><br /></td></tr>
+<tr class="separator:ae0ea46e5730fd12ec38e71755b4cb142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0698dd97ef607203096472d28ba77aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#aa0698dd97ef607203096472d28ba77aa">treatmentConstant</a> (double gamma, double &amp;t, int &amp;i, int me, int i1, int im, double <a class="el" href="_parameters_8hpp.html#abb35e1061ebe407930e0f8325712d6fc">tmax</a>, <a class="el" href="class_tumor.html">Tumor</a> *tumor, <a class="el" href="class_advection.html">Advection</a> *advectionStep)</td></tr>
+<tr class="memdesc:aa0698dd97ef607203096472d28ba77aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the direct simulation with constant treatment function delta during tmax days.  <a href="#aa0698dd97ef607203096472d28ba77aa">More...</a><br /></td></tr>
+<tr class="separator:aa0698dd97ef607203096472d28ba77aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026a06ffeb46582b247867b6766498f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#a026a06ffeb46582b247867b6766498f7">inverseProblem</a> (double gamma, double tinitial, int me, int i1, int im, int np, double <a class="el" href="_parameters_8hpp.html#abb35e1061ebe407930e0f8325712d6fc">tmax</a>, <a class="el" href="class_tumor.html">Tumor</a> *tumor, <a class="el" href="class_advection.html">Advection</a> *advectionStep)</td></tr>
+<tr class="memdesc:a026a06ffeb46582b247867b6766498f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the inverse problem during tmax days To find the two optimal parameters of Gaussian treatment function delta.  <a href="#a026a06ffeb46582b247867b6766498f7">More...</a><br /></td></tr>
+<tr class="separator:a026a06ffeb46582b247867b6766498f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9442a12252ddf7ff3758cc61a839bc82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_simulation_8cpp.html#a9442a12252ddf7ff3758cc61a839bc82">freeVarsAndMpi</a> (<a class="el" href="class_tumor.html">Tumor</a> *tumor, <a class="el" href="class_advection.html">Advection</a> *advectionStep)</td></tr>
 <tr class="memdesc:a9442a12252ddf7ff3758cc61a839bc82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free allocated variables and close MPI.  <a href="#a9442a12252ddf7ff3758cc61a839bc82">More...</a><br /></td></tr>
 <tr class="separator:a9442a12252ddf7ff3758cc61a839bc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ae8fb1b5edf84b74ed78817e34e68dc3b"></a>
+<a class="anchor" id="acd6eda2513408d0e5a2948fbabc7b571"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -124,6 +133,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">double &amp;&#160;</td>
           <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -164,68 +179,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>volume</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>volume_prev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>iniVolume</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tgc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tsolveV</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>ttransp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateP</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateM</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateD</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>twrite</em>&#160;</td>
+          <td class="paramname"><em>iniVolume</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -239,122 +194,20 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>double time after the direct simulation </td></tr>
+    <tr><td class="paramname">i</td><td>int iteration count </td></tr>
     <tr><td class="paramname">me</td><td>int thread number </td></tr>
     <tr><td class="paramname">i1</td><td>int beginning of the thread partition on z axis </td></tr>
     <tr><td class="paramname">im</td><td>int end of the thread partition on z axis </td></tr>
     <tr><td class="paramname">tmax</td><td>double time of simulation </td></tr>
     <tr><td class="paramname">tumor</td><td><a class="el" href="class_tumor.html" title="class that describe the tumor behaviour ">Tumor</a> tumor object </td></tr>
-    <tr><td class="paramname">radius</td><td>double radius after simulation </td></tr>
-    <tr><td class="paramname">volume</td><td>double volume after simulation </td></tr>
-    <tr><td class="paramname">volume_prev</td><td>double previous volume (input initial volume) </td></tr>
-    <tr><td class="paramname">tgc</td><td>double computational time spent solving laplacian problem </td></tr>
-    <tr><td class="paramname">tsolveV</td><td>double computational time spent solving velocity = -grad(pi) </td></tr>
-    <tr><td class="paramname">ttransp</td><td>double computational time spent solving advection equation </td></tr>
-    <tr><td class="paramname">tupdateP</td><td>double computational time spent updating P from phi </td></tr>
-    <tr><td class="paramname">tupdateM</td><td>double computational time spent solving EDO on M </td></tr>
-    <tr><td class="paramname">tupdateD</td><td>double computational time spent updating Level-Set distance </td></tr>
-    <tr><td class="paramname">twrite</td><td>double computational time spent writing output files </td></tr>
+    <tr><td class="paramname">advectionStep</td><td><a class="el" href="class_advection.html">Advection</a> advection object </td></tr>
+    <tr><td class="paramname">iniVolume</td><td>double initial tumor volume </td></tr>
   </table>
   </dd>
 </dl>
 <p>Displays a progress bar </p>
 
-</div>
-</div>
-<a class="anchor" id="a4cc9601ede66acd019a84dccff882e85"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void displayTimings </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>me</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tgc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tini</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tsolveV</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ttransp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tupdateP</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tupdateM</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tupdateD</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>twrite</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_tumor.html">Tumor</a> *&#160;</td>
-          <td class="paramname"><em>tumor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Display computational time spent on each routine, for profiling purpose. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">me</td><td>int thread number </td></tr>
-    <tr><td class="paramname">tp</td><td>double Total computational time </td></tr>
-    <tr><td class="paramname">tgc</td><td>double computational time spent solving laplacian problem </td></tr>
-    <tr><td class="paramname">tini</td><td>double computational time spent in initialisation </td></tr>
-    <tr><td class="paramname">tsolveV</td><td>double computational time spent solving velocity = -grad(pi) </td></tr>
-    <tr><td class="paramname">ttransp</td><td>double computational time spent solving advection equation </td></tr>
-    <tr><td class="paramname">tupdateP</td><td>double computational time spent updating P from phi </td></tr>
-    <tr><td class="paramname">tupdateM</td><td>double computational time spent solving EDO on M </td></tr>
-    <tr><td class="paramname">tupdateD</td><td>double computational time spent updating Level-Set distance </td></tr>
-    <tr><td class="paramname">twrite</td><td>double computational time spent writing output files </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Definition at line <a class="el" href="_simulation_8cpp_source.html#l00085">85</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -391,9 +244,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_simulation_8cpp_source.html#l00469">469</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="aebc7d284160ee4d5576d279164b6aa27"></a>
+<a class="anchor" id="ac3478054fcbc84f2623ccb0b8de8074f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -419,13 +274,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>np</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tp</em>&#160;</td>
+          <td class="paramname"><em>np</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -442,14 +291,15 @@ Functions</h2></td></tr>
     <tr><td class="paramname">argv</td><td>char** process arguments </td></tr>
     <tr><td class="paramname">me</td><td>int thread number </td></tr>
     <tr><td class="paramname">np</td><td>int number of thread </td></tr>
-    <tr><td class="paramname">tp</td><td>double starting time </td></tr>
   </table>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_simulation_8cpp_source.html#l00014">14</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="affa4e4e6a9427a945ff4616076bf33f4"></a>
+<a class="anchor" id="a4d19b10f2500c5ae6a58d0f12c24f635"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -480,32 +330,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>nzLocal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>sizeLocal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="class_advection.html">Advection</a> *&amp;&#160;</td>
           <td class="paramname"><em>advectionStep</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VectorXd &amp;&#160;</td>
-          <td class="paramname"><em>P0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>radius</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -516,20 +342,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>volume</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="class_tumor.html">Tumor</a> *&amp;&#160;</td>
-          <td class="paramname"><em>tumor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tini</em>&#160;</td>
+          <td class="paramname"><em>tumor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -546,29 +360,32 @@ Functions</h2></td></tr>
     <tr><td class="paramname">np</td><td>int number of thread </td></tr>
     <tr><td class="paramname">i1</td><td>int beginning of the thread partition on z axis </td></tr>
     <tr><td class="paramname">im</td><td>int end of the thread partition on z axis </td></tr>
-    <tr><td class="paramname">nzLocal</td><td>int convenient variable set to im-i1+1 </td></tr>
-    <tr><td class="paramname">sizeLocal</td><td>int convenient variable set to nx*ny*nzLocal </td></tr>
     <tr><td class="paramname">advectionStep</td><td>Advection* allocate and initialize advection object </td></tr>
-    <tr><td class="paramname">P0</td><td>VectorXd Values of the <a class="el" href="class_tumor.html" title="class that describe the tumor behaviour ">Tumor</a> mask read from vtk file </td></tr>
-    <tr><td class="paramname">radius</td><td>double compute initial tumor radius </td></tr>
     <tr><td class="paramname">iniVolume</td><td>double compute initial tumor volume </td></tr>
     <tr><td class="paramname">tumor</td><td>Tumor* allocate and initialize tumor object </td></tr>
-    <tr><td class="paramname">tini</td><td>double time of initialisation </td></tr>
   </table>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_simulation_8cpp_source.html#l00031">31</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a9a471e1bc258984c2ed7b787319c8f63"></a>
+<a class="anchor" id="a026a06ffeb46582b247867b6766498f7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void inverseProblem </td>
           <td>(</td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tinitial</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -610,73 +427,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_advection.html">Advection</a> *&#160;</td>
-          <td class="paramname"><em>advectionStep</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>volume</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>volume_prev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>iniVolume</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tgc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tsolveV</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>ttransp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateP</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateM</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateD</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>twrite</em>&#160;</td>
+          <td class="paramname"><em>advectionStep</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -689,43 +440,42 @@ Functions</h2></td></tr>
 <p>Compute the inverse problem during tmax days To find the two optimal parameters of Gaussian treatment function delta. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>double time after the direct simulation </td></tr>
+    <tr><td class="paramname">gamma</td><td>double Treatment total dose (= 0.6025) </td></tr>
+    <tr><td class="paramname">tinitial</td><td>double time after the direct simulation </td></tr>
     <tr><td class="paramname">me</td><td>int thread number </td></tr>
     <tr><td class="paramname">i1</td><td>int beginning of the thread partition on z axis </td></tr>
     <tr><td class="paramname">im</td><td>int end of the thread partition on z axis </td></tr>
     <tr><td class="paramname">tmax</td><td>double time of simulation </td></tr>
     <tr><td class="paramname">tumor</td><td><a class="el" href="class_tumor.html" title="class that describe the tumor behaviour ">Tumor</a> tumor object </td></tr>
-    <tr><td class="paramname">radius</td><td>double radius after simulation </td></tr>
-    <tr><td class="paramname">volume</td><td>double volume after simulation </td></tr>
-    <tr><td class="paramname">volume_prev</td><td>double previous volume (input initial volume) </td></tr>
-    <tr><td class="paramname">tgc</td><td>double computational time spent solving laplacian problem </td></tr>
-    <tr><td class="paramname">tsolveV</td><td>double computational time spent solving velocity = -grad(pi) </td></tr>
-    <tr><td class="paramname">ttransp</td><td>double computational time spent solving advection equation </td></tr>
-    <tr><td class="paramname">tupdateP</td><td>double computational time spent updating P from phi </td></tr>
-    <tr><td class="paramname">tupdateM</td><td>double computational time spent solving EDO on M </td></tr>
-    <tr><td class="paramname">tupdateD</td><td>double computational time spent updating Level-Set distance </td></tr>
-    <tr><td class="paramname">twrite</td><td>double computational time spent writing output files </td></tr>
   </table>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_simulation_8cpp_source.html#l00350">350</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a9bb6217b77520374716a84e34372f906"></a>
+<a class="anchor" id="aa0698dd97ef607203096472d28ba77aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void inverseSimulation </td>
+          <td class="memname">void treatmentConstant </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>sigma</em>, </td>
+          <td class="paramname"><em>gamma</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double &amp;&#160;</td>
           <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -761,73 +511,99 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_advection.html">Advection</a> *&#160;</td>
-          <td class="paramname"><em>advectionStep</em>, </td>
+          <td class="paramname"><em>advectionStep</em>&#160;</td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>radius</em>, </td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the direct simulation with constant treatment function delta during tmax days. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gamma</td><td>double Treatment total dose (= 0.6025) </td></tr>
+    <tr><td class="paramname">t</td><td>double time after the direct simulation </td></tr>
+    <tr><td class="paramname">i</td><td>int iteration count after the direct simulation </td></tr>
+    <tr><td class="paramname">me</td><td>int thread number </td></tr>
+    <tr><td class="paramname">i1</td><td>int beginning of the thread partition on z axis </td></tr>
+    <tr><td class="paramname">im</td><td>int end of the thread partition on z axis </td></tr>
+    <tr><td class="paramname">tmax</td><td>double time of simulation </td></tr>
+    <tr><td class="paramname">tumor</td><td><a class="el" href="class_tumor.html" title="class that describe the tumor behaviour ">Tumor</a> tumor object </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Displays a progress bar </p>
+
+<p>Definition at line <a class="el" href="_simulation_8cpp_source.html#l00259">259</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0ea46e5730fd12ec38e71755b4cb142"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>volume</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>volume_prev</em>, </td>
+          <td class="memname">void treatmentGaussian </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>iniVolume</em>, </td>
+          <td class="paramname"><em>sigma</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tgc</em>, </td>
+          <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tsolveV</em>, </td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>ttransp</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>me</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateP</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateM</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>tupdateD</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tmax</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>twrite</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_tumor.html">Tumor</a> *&#160;</td>
+          <td class="paramname"><em>tumor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_advection.html">Advection</a> *&#160;</td>
+          <td class="paramname"><em>advectionStep</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -842,25 +618,18 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sigma</td><td>double Gaussian standard deviation </td></tr>
     <tr><td class="paramname">t</td><td>double time after the direct simulation </td></tr>
+    <tr><td class="paramname">i</td><td>int iteration count after the direct simulation </td></tr>
     <tr><td class="paramname">me</td><td>int thread number </td></tr>
     <tr><td class="paramname">i1</td><td>int beginning of the thread partition on z axis </td></tr>
     <tr><td class="paramname">im</td><td>int end of the thread partition on z axis </td></tr>
     <tr><td class="paramname">tmax</td><td>double time of simulation </td></tr>
     <tr><td class="paramname">tumor</td><td><a class="el" href="class_tumor.html" title="class that describe the tumor behaviour ">Tumor</a> tumor object </td></tr>
-    <tr><td class="paramname">radius</td><td>double radius after simulation </td></tr>
-    <tr><td class="paramname">volume</td><td>double volume after simulation </td></tr>
-    <tr><td class="paramname">volume_prev</td><td>double previous volume (input initial volume) </td></tr>
-    <tr><td class="paramname">tgc</td><td>double computational time spent solving laplacian problem </td></tr>
-    <tr><td class="paramname">tsolveV</td><td>double computational time spent solving velocity = -grad(pi) </td></tr>
-    <tr><td class="paramname">ttransp</td><td>double computational time spent solving advection equation </td></tr>
-    <tr><td class="paramname">tupdateP</td><td>double computational time spent updating P from phi </td></tr>
-    <tr><td class="paramname">tupdateM</td><td>double computational time spent solving EDO on M </td></tr>
-    <tr><td class="paramname">tupdateD</td><td>double computational time spent updating Level-Set distance </td></tr>
-    <tr><td class="paramname">twrite</td><td>double computational time spent writing output files </td></tr>
   </table>
   </dd>
 </dl>
 <p>Displays a progress bar </p>
+
+<p>Definition at line <a class="el" href="_simulation_8cpp_source.html#l00170">170</a> of file <a class="el" href="_simulation_8cpp_source.html">Simulation.cpp</a>.</p>
 
 </div>
 </div>
